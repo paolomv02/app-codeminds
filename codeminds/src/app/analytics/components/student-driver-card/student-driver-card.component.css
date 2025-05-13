@@ -1,0 +1,29 @@
+.card {
+  width: 350px;
+  height: 350px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 16px;
+}
+
+.card-image {
+  width: 150px; /* Tamaño fijo para la imagen */
+  height: 150px; /* Igual al ancho para que sea un círculo */
+  object-fit: cover;
+  border-radius: 50%; /* Hace que la imagen sea redonda */
+  margin: 0 auto 16px; /* Centra la imagen y agrega un margen inferior */
+}
+
+.card-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8px;
+}

@@ -1,0 +1,15 @@
+/* Filtro */
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+/* Contenedor de las tarjetas */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Máximo 4 columnas */
+  gap: 16px; /* Espaciado entre las tarjetas */
+  justify-items: center; /* Centra las tarjetas horizontalmente */
+}

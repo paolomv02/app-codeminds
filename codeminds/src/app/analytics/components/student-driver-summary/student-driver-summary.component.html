@@ -1,0 +1,17 @@
+<div class="filter-container">
+  <mat-form-field appearance="outline">
+    <mat-label>User Type</mat-label>
+    <mat-select [(value)]="selectedUserType" (selectionChange)="filterUsers()">
+      <mat-option *ngFor="let type of userTypes" [value]="type">{{ type }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="search()">Search</button>
+</div>
+
+<div class="cards-container">
+  <app-student-driver-card
+    *ngFor="let user of filteredUsers"
+    [user]="user">
+  </app-student-driver-card>
+</div>
